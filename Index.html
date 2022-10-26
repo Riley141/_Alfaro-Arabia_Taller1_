@@ -1,0 +1,45 @@
+<html>
+
+ <head>
+
+     <title>Alfaro Arabia</title>
+ <ul>
+        <li>Angel</li>
+        <li>Pedro</li>
+        <li>Juan</li>
+        <li>Daniel</li>
+        <li>Lucas</li>
+      </ul>
+      <button onclick="listadoAleatorio()">Refrescar</button>
+
+ <script >
+const lista = ["Angel", "Pedro", "Juan", "Manuel", "Daniel", "Lucas"]
+
+function listadoAleatorio(lista) {
+  return [...lista].sort(() => (Math.random() > 0.5 ? 1 : -1)).slice(0, 3)
+}
+
+console.log(listadoAleatorio(lista))
+
+ </script>
+
+<script>
+
+function azar(){
+  var ul = document.querySelector('ul');
+  for (var i = ul.children.length; i >= 0; i--) {
+      ul.appendChild(ul.children[Math.random() * i | 0]);
+  }
+}
+    </script>
+
+  </head>
+<body bgcolor=cyan>
+
+
+
+  </form>
+
+</body>
+
+</html>
